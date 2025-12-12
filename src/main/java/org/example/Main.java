@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.entities.Personaje;
+import org.example.entities.Traje;
 import org.hibernate.Session;
 
 import java.util.Scanner;
@@ -25,6 +27,7 @@ public class Main {
                             "12-Mostrar cuantos personajes tienen una habilidad concreta.\n"+
                             "0-Salir del programa.");
             opciones=scanner.nextInt();
+
         }
         session.close();
         System.out.println("Finalizando la conexion a MySQL");

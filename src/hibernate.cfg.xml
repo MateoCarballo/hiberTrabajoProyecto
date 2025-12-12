@@ -6,8 +6,16 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/marvel?createDatabaseIfNotExist=true&amp;serverTimezone=UTC</property>
         <property name="connection.username">root</property>
         <property name="connection.password">abc123.</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">validate</property>
         <property name="hibernate.dialect.storage_engine">innodb</property>
         <property name="hibernate.show_sql">true</property>
+
+        <!-- AQUÍ FALTA DECIRLE QUE SON ENTIDADES Y DONDE ESTÁN-->
+        <mapping class = "org.example.entities.Evento"/>
+        <mapping class = "org.example.entities.Habilidad"/>
+        <mapping class = "org.example.entities.Participa"/>
+        <mapping class = "org.example.entities.Personaje"/>
+        <mapping class = "org.example.entities.Traje"/>
     </session-factory>
+
 </hibernate-configuration>
